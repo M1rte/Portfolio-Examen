@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 50px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #93a491;
+}
