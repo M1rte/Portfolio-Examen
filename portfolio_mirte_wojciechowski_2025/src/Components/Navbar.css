@@ -1,13 +1,15 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
-  padding: 20px 50px;
-  background: transparent;
-  position: absolute;
+  padding: 35px 50px;
+  background: #8c9657;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
 }
+
 
 .nav-links {
   list-style: none;
@@ -21,10 +23,10 @@
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  color: #333;
+  color: #473f34;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #93a491;
+  color: #f0e5c7;
 }

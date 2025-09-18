@@ -1,16 +1,16 @@
-/* src/Components/Header.css */
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  padding: 100px;
+  padding: 4rem 2rem;
+  padding-right: 40%;
+  gap: 3rem;
 }
 
-.header-left .avatar {
-  width: 150px;
-  height: 150px;
-  background: #555;
+.header-left .profile-pic {
+  width: 180px;
+  height: 180px;
+  background: #473f34;
   border-radius: 50%;
 }
 
@@ -18,17 +18,18 @@
   max-width: 500px;
 }
 
-.greeting {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
+.hello-text {
+  font-family: "Homemade Apple", cursive;
   font-weight: 400;
-  margin-bottom: 20px;
-  color: #111;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #473f34;
 }
 
 .header-right p {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #444;
+  font-size: 1rem;
   line-height: 1.6;
+  color: #473f34;
 }
