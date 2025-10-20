@@ -13,11 +13,9 @@ const Footer = () => {
           <li><a href="/projects">Projecten</a></li>
         </ul>
       </div>
-
       <div className="footer-center">
         <h2 className="footer-logo">Mirte Wojciechowski</h2>
       </div>
-
       <div className="footer-right">
         <a 
           href="https://www.linkedin.com" 
