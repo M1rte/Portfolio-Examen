@@ -17,10 +17,10 @@ const Navbar = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/about">Over mij</a></li>
           <li><a href="/projects">Projecten</a></li>
+          <li><a href="/evidence">Bewijsmaterialen</a></li>
           <li><a href="/contact">Contacten</a></li>
         </ul>
 
-        {/* Hamburger Button */}
         <div className="hamburger" onClick={toggleMenu}>
           <span></span>
           <span></span>

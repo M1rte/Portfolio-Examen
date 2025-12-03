@@ -1,7 +1,7 @@
 import "./Projects.css";
-import logoKTM from '../img/logoKtm.webp';
-import logoKEMBIT from '../img/Logo-darkmode-theKembitTimes.png';
-import logoRoermond from '../img/Roermond-logo.png';
+import logoKTM from '../img/LogoKtm.png';
+import logoKEMBIT from '../img/LogoKEMBIT.png';
+import logoRoermond from '../img/LogoRoermond.png';
 
 export default function Projects() {
 
@@ -20,7 +20,7 @@ export default function Projects() {
 
       <div className="projects-container">
         <div className="project-card" onClick={() => scrollToSection("ktm-project")}>
-          <img src={logoKTM} alt="KTM motor project" />
+          <img src={logoKTM} alt="KTM project" />
           <div className="overlay">
             <div className="text">KTM Project</div>
           </div>
