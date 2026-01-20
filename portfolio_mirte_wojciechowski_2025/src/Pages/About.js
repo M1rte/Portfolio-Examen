@@ -1,8 +1,14 @@
+import React from "react";
+import Header from "../Components/Header";
+import "./About.css";
 
 export default function About() {
   return (
-    <div>
-      <p style={{ textAlign: "center" }}>This is the about page content.</p>
+    <div className="About">
+      <Header 
+        title="Welcome to My Portfolio" 
+        subtitle="Frontend Developer | React Enthusiast" 
+      />
     </div>
   );
 }

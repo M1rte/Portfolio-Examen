@@ -4,7 +4,7 @@
 }
 
 .projects h1 {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-size: 2rem;
   font-family: "Homemade Apple", cursive;
   color: #473f34;
@@ -37,6 +37,73 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ font-family: inherit;
+ font-size: 15px;
+}
+
+button a {
+  text-decoration: none;
+  color: #393f1a;
+  font-weight: 600;
+}
+
+button.header-button-projects {
+ text-transform: uppercase;
+ padding: 1.25em 2em;
+ background: #f0e5cb;
+ border: 2px solid #393f1a;
+ border-radius: 0.75em;
+ -webkit-transform-style: preserve-3d;
+ transform-style: preserve-3d;
+ -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-projects::before {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #444b22;
+ border-radius: inherit;
+ -webkit-transform: translate3d(0, 0.75em, -1em);
+ transform: translate3d(0, 0.75em, -1em);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-projects:hover {
+ background: #8c9657;
+ -webkit-transform: translate(0, 0.25em);
+ transform: translate(0, 0.25em);
+}
+
+button.header-button-projects:hover::before {
+ -webkit-transform: translate3d(0, 0.5em, -1em);
+ transform: translate3d(0, 0.5em, -1em);
+}
+
+button.header-button-projects:active {
+ background: #f0e5cb;
+ -webkit-transform: translate(0em, 0.75em);
+ transform: translate(0em, 0.75em);
+}
+
+button.header-button-projects:active::before {
+ -webkit-transform: translate3d(0, 0, -1em);
+ transform: translate3d(0, 0, -1em);
 }
 
 .overlay {
@@ -94,7 +161,7 @@ html {
   background-color: #55662f;
 }
 
-.header {
+.header-projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,11 +174,11 @@ html {
   box-shadow: 0 6px 8px 0 #00000042;
 }
 
-.header-right {
+.header-right-projects {
   max-width: 500px;
 }
 
-.header-right p {
+.header-right-projects p {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   line-height: 1.6;

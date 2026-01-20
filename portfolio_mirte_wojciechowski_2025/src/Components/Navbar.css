@@ -6,21 +6,20 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 32px;
-  background: #8c9657;
-  box-shadow: 0 2px 4px 0 #00000033;
+  padding: 20px;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+  width: 94%;
   z-index: 1000;
+  border-radius: 50px;
 }
 
 .nav-left .nav-logo {
   font-family: 'Great Vibes', cursive;
   font-size: 2rem;
-  color: #473f34;
+  color: #f0e5cb;
   margin: 0;
 }
 
@@ -28,17 +27,17 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  padding-right: 60px;
+  padding-right: 20px;
 }
 
 .nav-links li a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  color: #473f34;
+  color: #f0e5cb;
   position: relative;
   transition: color 0.3s;
 }
@@ -50,12 +49,12 @@ body {
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #f0e5c7;
+  background: #8c9657;
   transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #f0e5c7;
+  color: #8c9657;
 }
 
 .nav-links li a:hover::after {

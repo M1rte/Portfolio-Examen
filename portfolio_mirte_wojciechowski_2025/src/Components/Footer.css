@@ -1,5 +1,5 @@
 .footer {
-  background: #473f34;
+  background: #f0e5cb;
   padding: 60px 70px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -33,7 +33,7 @@
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  color: #f0e5cb;
+  color: #473f34;
   position: relative;
   transition: color 0.3s;
 }
@@ -60,12 +60,12 @@
 .footer-logo {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8rem;
-  color: #f0e5cb;
+  color: #473f34;
   margin: 0;
 }
 
 .social-link {
-  color: #f0e5cb;
+  color: #473f34;
   font-size: 1.5rem;
   transition: transform 0.3s, color 0.3s;
 }

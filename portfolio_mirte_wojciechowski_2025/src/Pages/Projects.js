@@ -43,8 +43,8 @@ export default function Projects() {
 
       <div className="project-details">
         <section id="ktm-project">
-            <header className="header">
-                <div className="header-right">
+            <header className="header-projects">
+                <div className="header-right-projects">
                     <h1>KTM Project</h1>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -52,14 +52,14 @@ export default function Projects() {
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                     </p>
-                    <button class="header-button"><a href="/projects">Naar mijn projecten</a></button>
+                    <button class="header-button-projects"><a href="/projects">Naar mijn projecten</a></button>
                 </div>
             </header>
         </section>
 
         <section id="kembit-project">
-          <header className="header">
-                <div className="header-right">
+          <header className="header-projects">
+                <div className="header-right-projects">
                     <h1>Kembit Times</h1>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,14 +67,14 @@ export default function Projects() {
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                     </p>
-                    <button class="header-button"><a href="/projects">Naar mijn projecten</a></button>
+                    <button class="header-button-projects"><a href="/projects">Naar mijn projecten</a></button>
                 </div>
             </header>
         </section>
 
         <section id="roermond-project">
-          <header className="header">
-                <div className="header-right">
+          <header className="header-projects">
+                <div className="header-right-projects">
                     <h1>Roermond Project</h1>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -82,7 +82,7 @@ export default function Projects() {
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                     </p>
-                    <button class="header-button"><a href="/projects">Naar mijn projecten</a></button>
+                    <button class="header-button-projects"><a href="/projects">Naar mijn projecten</a></button>
                 </div>
             </header>
         </section>

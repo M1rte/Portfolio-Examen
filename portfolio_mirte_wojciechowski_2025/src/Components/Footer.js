@@ -9,8 +9,9 @@ const Footer = () => {
         <ul className="footer-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">Over mij</a></li>
-          <li><a href="/contact">Contacten</a></li>
           <li><a href="/projects">Projecten</a></li>
+          <li><a href="/Evidence">Bewijsmaterialen</a></li>
+          <li><a href="/contact">Contacten</a></li>
         </ul>
       </div>
       <div className="footer-center">
@@ -18,7 +19,7 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <a 
-          href="https://www.linkedin.com" 
+          href="https://www.linkedin.com/in/mirte-wojciechowski/" 
           target="_blank" 
           rel="noreferrer" 
           className="social-link"
@@ -26,7 +27,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
         <a 
-          href="https://github.com" 
+          href="https://github.com/M1rte" 
           target="_blank" 
           rel="noreferrer" 
           className="social-link"

@@ -1,7 +1,106 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-  padding-bottom: 15%;
+.header-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    padding-right: 40%;
+    padding-top: 12%;
+    padding-bottom: 20%;
+    gap: 3rem;
+    background-color: #473f34;
+    box-shadow: 0 6px 8px 0 #00000042;
 }
 
+.header-left-about .profile-pic {
+  width: 180px;
+  height: 180px;
+  background: #f0e5cb;
+  border-radius: 50%;
+}
+
+.header-right-about {
+  max-width: 500px;
+}
+
+.hello-text-about {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #f0e5cb;
+}
+
+.header-right-about p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0e5cb;
+}
+
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ font-family: inherit;
+ font-size: 15px;
+}
+
+button a {
+  text-decoration: none;
+  color: #393f1a;
+  font-weight: 600;
+}
+
+button.header-button-about {
+ text-transform: uppercase;
+ padding: 1.25em 2em;
+ background: #f0e5cb;
+ border: 2px solid #393f1a;
+ border-radius: 0.75em;
+ -webkit-transform-style: preserve-3d;
+ transform-style: preserve-3d;
+ -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-about::before {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #444b22;
+ border-radius: inherit;
+ -webkit-transform: translate3d(0, 0.75em, -1em);
+ transform: translate3d(0, 0.75em, -1em);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-about:hover {
+ background: #8c9657;
+ -webkit-transform: translate(0, 0.25em);
+ transform: translate(0, 0.25em);
+}
+
+button.header-button-about:hover::before {
+ -webkit-transform: translate3d(0, 0.5em, -1em);
+ transform: translate3d(0, 0.5em, -1em);
+}
+
+button.header-button-about:active {
+ background: #f0e5cb;
+ -webkit-transform: translate(0em, 0.75em);
+ transform: translate(0em, 0.75em);
+}
+
+button.header-button-about:active::before {
+ -webkit-transform: translate3d(0, 0, -1em);
+ transform: translate3d(0, 0, -1em);
+}
