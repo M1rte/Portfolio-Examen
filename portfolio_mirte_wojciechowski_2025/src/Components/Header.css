@@ -1,20 +1,40 @@
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 2rem;
-    padding-right: 40%;
-    padding-top: 12%;
-    padding-bottom: 20%;
-    gap: 3rem;
-    background-color: #473f34;
-    box-shadow: 0 6px 8px 0 #00000042;
+.header > * {
+  position: relative;
+  z-index: 2;
 }
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  padding-right: 40%;
+  padding-top: 12%;
+  padding-bottom: 17%;
+  gap: 3rem;
+  background-color: #221e18;
+  box-shadow: 0 6px 8px 0 #00000042;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/background_landing3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
 
 .header-left .profile-pic {
   width: 180px;
   height: 180px;
-  background: #f0e5cb;
+  background: #d7c8b4;
   border-radius: 50%;
 }
 
@@ -28,14 +48,14 @@
   font-style: normal;
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: #f0e5cb;
+  color: #d7c8b4;
 }
 
 .header-right p {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #f0e5cb;
+  color: #d7c8b4;
 }
 
 button {
@@ -58,7 +78,7 @@ button a {
 button.header-button {
  text-transform: uppercase;
  padding: 1.25em 2em;
- background: #f0e5cb;
+ background: #d7c8b4;
  border: 2px solid #393f1a;
  border-radius: 0.75em;
  -webkit-transform-style: preserve-3d;
@@ -95,7 +115,7 @@ button.header-button:hover::before {
 }
 
 button.header-button:active {
- background: #f0e5cb;
+ background: #d7c8b4;
  -webkit-transform: translate(0em, 0.75em);
  transform: translate(0em, 0.75em);
 }

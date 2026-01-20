@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="section">
         <div className="image-container">
-          <img src="/images/about.jpg" alt="About me" />
+          <img src="../../home1.jpg" alt="About me" />
         </div>
         <div className="text-container">
           <h2>About Me</h2>
@@ -20,26 +20,28 @@ export default function Home() {
             building modern and responsive websites. I enjoy turning ideas into
             interactive digital experiences.
           </p>
+                              <button class="header-button-projects"><a href="/About">Meer over mij</a></button>
         </div>
       </section>
 
       <section className="section reverse">
-        <div className="text-container">
+        <div className="image-container">
+          <img src="../../home2.jpg" alt="Projects" />
+        </div>
+        <div className="text-container-reverse">
           <h2>Projects</h2>
           <p>
             I have worked on several projects ranging from portfolio websites to
             dynamic web applications. Each project taught me new skills and best
             practices.
           </p>
-        </div>
-        <div className="image-container">
-          <img src="/images/projects.jpg" alt="Projects" />
+          <button class="header-button-projects"><a href="/projects">Naar mijn projecten</a></button>
         </div>
       </section>
 
       <section className="section">
         <div className="image-container">
-          <img src="/images/contact.jpg" alt="Contact" />
+          <img src="../../home4.jpg" alt="Contact" />
         </div>
         <div className="text-container">
           <h2>Contact</h2>
@@ -47,6 +49,7 @@ export default function Home() {
             Interested in working together? Feel free to reach out via the
             contact page. I’d love to collaborate with you!
           </p>
+          <button class="header-button-projects"><a href="/contact">Neem contact op met mij</a></button>
         </div>
       </section>
     </div>
