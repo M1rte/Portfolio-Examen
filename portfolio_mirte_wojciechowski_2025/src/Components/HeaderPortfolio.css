@@ -1,0 +1,106 @@
+.HeaderPortfolio {
+  position: relative;
+  padding: 50px 6%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #221e18;
+  box-shadow: 0 6px 8px 0 #00000042;
+  overflow: hidden;
+}
+
+.HeaderPortfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../public/projects2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.HeaderPortfolio::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.HeaderPortfolio-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 3; 
+}
+
+.hello-text {
+  font-family: "Homemade Apple", cursive;
+  font-size: 3.5rem;
+  color: #f0e5cb;
+  margin-bottom: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  background: #f0e5cb;
+  backdrop-filter: blur(10px);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 1px solid #221e18;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  background: #8c9657;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  background-color: #221e18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  color: #393f1a;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.project-info p {
+  font-family: 'Lato', sans-serif;
+  color: #8c9657;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

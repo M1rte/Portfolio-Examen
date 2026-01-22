@@ -10,14 +10,18 @@ const scrollToTop = () => {
 window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-return ( <div className="evidence"> <h1>Bewijsmaterialen</h1>
-
-
-  <div className="evidence-nav">
+return ( <div className="evidence"> 
+<header className="evidence-header">
+      <div className="evidence-header-left">
+      </div>
+      <div className="evidence-header-right">
+        <h1 className="hello-text">Bewijsmaterialen</h1>
+      </div>
+        <div className="evidence-nav">
     <button onClick={() => scrollToSection("k1")}>K1</button>
     <button onClick={() => scrollToSection("k2")}>K2</button>
   </div>
-
+    </header>
   <section id="k1" className="evidence-section">
     <h2>K1 – Realiseert software</h2>
 

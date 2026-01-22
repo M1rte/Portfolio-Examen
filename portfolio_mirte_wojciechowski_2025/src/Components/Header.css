@@ -3,6 +3,10 @@
   z-index: 2;
 }
 
+.body{
+  background-color: #221e18;
+}
+
 .header {
   position: relative;
   display: flex;

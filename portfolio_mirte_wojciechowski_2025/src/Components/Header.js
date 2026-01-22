@@ -15,7 +15,9 @@ const Header = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-                    <button class="header-button-projects"><a href="/projects">Naar mijn projecten</a></button>
+          <a href="/projects "><button className="header-button-projects">
+            Naar mijn projecten
+          </button></a>
       </div>
     </header>
   );
