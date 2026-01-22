@@ -6,7 +6,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 30px;
   position: fixed;
   top: 1%;
   left: 1%;
@@ -14,6 +14,13 @@ body {
   width: 94%;
   z-index: 1000;
   border-radius: 50px;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition:
+    backdrop-filter 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .nav-left .nav-logo {
@@ -39,7 +46,7 @@ body {
   font-weight: 600;
   color: #f0e5cb;
   position: relative;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a::after {
@@ -59,4 +66,26 @@ body {
 
 .nav-links li a:hover::after {
   width: 100%;
+}
+
+/* text readability */
+.nav-left .nav-logo,
+.nav-links li a {
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.navbar.scrolled {
+  transform: translateY(2px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar.scrolled .nav-left .nav-logo,
+.navbar.scrolled .nav-links li a {
+  color: #f0e5cb;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.75),
+    0 0 25px rgba(0, 0, 0, 0.5);
 }

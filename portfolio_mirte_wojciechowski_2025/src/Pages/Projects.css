@@ -1,53 +1,231 @@
 .projects {
-  text-align: center;
-  padding-top: 150px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
 }
 
 .projects h1 {
-  margin-bottom: 5px;
-  font-size: 2rem;
   font-family: "Homemade Apple", cursive;
-  color: #473f34;
+  font-size: 2.4rem;
+  color: #f0e5cb;
+  margin-bottom: 60px;
 }
 
-.projects-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 5%;
-  padding-bottom: 20%;
+.HeaderPortfolio-projects {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+
+  max-width: 900px;
+}
+
+.projects-container::after {
+  content: "";
+  grid-column: 1 / -1;
+  margin-top: 120px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(57, 63, 26, 0.35),
+    transparent
+  );
 }
 
 .project-card {
-  width: 400px;
-  height: 400px;
-  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 40px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.3s ease;
+  position: relative;
+
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+
+  background: rgba(240, 229, 203, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
 }
 
+
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(240, 229, 203, 0.25);
+  pointer-events: none;
 }
 
 .project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: saturate(0.9) contrast(0.95);
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(57, 63, 26, 0.85),
+      rgba(57, 63, 26, 0.35)
+    );
+
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Homemade Apple", cursive;
+  font-size: 1.5rem;
+  color: #f0e5cb;
+
+  text-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.6);
+
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card:hover .text {
+  transform: translateY(0);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 220px;
+}
+
+.header-projects {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 0 4%;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.header-projects > * {
+  position: relative;
+  z-index: 2;
+}
+
+.header-right-projects {
+  max-width: 480px;
+}
+
+.header-right-projects h1 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.6rem;
+  color: #f0e5cb;
+  margin-bottom: 24px;
+}
+
+.header-right-projects p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f0e5cb;
+  opacity: 0.95;
+  margin-bottom: 36px;
+}
+
+.header-ktm {
+  background-image: url("../../public/projects1.jpg");
+}
+
+.header-kembit {
+  background-image: url("../../public/projects4.jpg");
+}
+
+.header-roermond {
+  background-image: url("../../public/projects3.jpg");
+}
+
+.project-section {
+  background: #221e18;
+  border-radius: 50px;
+  padding: 90px 70px;
+  margin-top: -120px;
+  margin: -80px auto 0;
+  max-width: 1100px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.project-section h1 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.3rem;
+  color: #f0e5cb;
+  margin-bottom: 30px;
+}
+
+.project-section p {
+  font-family: "Lato", sans-serif;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f0e5cb;
 }
 
 button {
- position: relative;
- display: inline-block;
- cursor: pointer;
- outline: none;
- border: 0;
- vertical-align: middle;
- font-family: inherit;
- font-size: 15px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: 15px;
 }
 
 button a {
@@ -57,131 +235,83 @@ button a {
 }
 
 button.header-button-projects {
- text-transform: uppercase;
- padding: 1.25em 2em;
- background: #f0e5cb;
- border: 2px solid #393f1a;
- border-radius: 0.75em;
- -webkit-transform-style: preserve-3d;
- transform-style: preserve-3d;
- -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
- transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #f0e5cb;
+  border: 2px solid #393f1a;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+              background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
 button.header-button-projects::before {
- position: absolute;
- content: '';
- width: 100%;
- height: 100%;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background: #444b22;
- border-radius: inherit;
- -webkit-transform: translate3d(0, 0.75em, -1em);
- transform: translate3d(0, 0.75em, -1em);
- transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #444b22;
+  border-radius: inherit;
+  transform: translate3d(0, 0.75em, -1em);
+  z-index: -1;
 }
 
 button.header-button-projects:hover {
- background: #8c9657;
- -webkit-transform: translate(0, 0.25em);
- transform: translate(0, 0.25em);
-}
-
-button.header-button-projects:hover::before {
- -webkit-transform: translate3d(0, 0.5em, -1em);
- transform: translate3d(0, 0.5em, -1em);
+  background: #8c9657;
+  transform: translateY(0.25em);
 }
 
 button.header-button-projects:active {
- background: #f0e5cb;
- -webkit-transform: translate(0em, 0.75em);
- transform: translate(0em, 0.75em);
+  transform: translateY(0.75em);
 }
 
-button.header-button-projects:active::before {
- -webkit-transform: translate3d(0, 0, -1em);
- transform: translate3d(0, 0, -1em);
-}
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.project-details {
-  margin-top: 70px;
-  padding: 30px;
-}
-
-.project-details section {
-  margin-bottom: 60px;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* =========================
+   BACK TO TOP
+========================= */
 
 .back-to-top {
-  display: block;
-  margin: 50px auto;
-  padding: 10px 30px;
-  font-size: 16px;
-  background-color: #697d3b;
-  color: white;
-  border: none;
-  border-radius: 8px;
+  margin: 120px auto 80px;
+  padding: 12px 34px;
+  background: #697d3b;
+  color: #fff;
+  border-radius: 2em;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .back-to-top:hover {
-  background-color: #55662f;
+  background: #55662f;
+  transform: translateY(-4px);
 }
 
-.header-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
-  padding-right: 40%;
-  padding-top: 12%;
-  padding-bottom: 12%;
-  gap: 3rem;
-  background-color: #473f34;
-  box-shadow: 0 6px 8px 0 #00000042;
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .header-projects {
+    min-height: 70vh;
+    padding: 80px 30px;
+  }
+
+  .project-section {
+    padding: 80px 30px;
+    margin-top: -60px;
+  }
 }
 
-.header-right-projects {
-  max-width: 500px;
-}
+@media (max-width: 600px) {
+  .projects-container {
+    gap: 30px;
+  }
 
-.header-right-projects p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #f0e5cb;
-}
+  .project-card {
+    width: 90%;
+    height: 320px;
+  }
 
+  .header-right-projects h1 {
+    font-size: 2.1rem;
+  }
+}
