@@ -46,7 +46,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 3.5rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   color: #d7c8b4;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
 }
@@ -124,6 +124,8 @@
   border-radius: 15px;
   border: 1px solid #473f34;
   transition: 0.3s ease;
+  color: inherit;
+  text-decoration: none;
 }
 
 .evidence-card:hover {
