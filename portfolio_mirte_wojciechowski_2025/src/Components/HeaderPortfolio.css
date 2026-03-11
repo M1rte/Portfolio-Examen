@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../public/projects2.jpg");
+  background-image: url("../../src/img/projects2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
