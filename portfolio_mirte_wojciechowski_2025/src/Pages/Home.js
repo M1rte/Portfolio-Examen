@@ -8,6 +8,9 @@ import {
   FaPython,
 } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import home1 from "../img/home1.jpg";
+import home2 from "../img/home2.jpg";
+import home4 from "../img/home4.jpg";
 
 export default function Home() {
   return (
@@ -19,7 +22,7 @@ export default function Home() {
 
       <section className="section">
         <div className="image-container">
-          <img src="../../home1.jpg" alt="About me" />
+          <img src={home1} alt="About me" />
         </div>
         <div className="text-container">
           <h2>About Me</h2>
@@ -36,7 +39,7 @@ export default function Home() {
 
       <section className="section reverse">
         <div className="image-container">
-          <img src="../../home2.jpg" alt="Projects" />
+          <img src={home2} alt="Projects" />
         </div>
         <div className="text-container-reverse">
           <h2>Projects</h2>
@@ -53,7 +56,7 @@ export default function Home() {
 
       <section className="section">
         <div className="image-container">
-          <img src="../../home4.jpg" alt="Contact" />
+          <img src={home4} alt="Contact" />
         </div>
         <div className="text-container">
           <h2>Contact</h2>

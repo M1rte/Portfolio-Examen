@@ -4,6 +4,7 @@ import logoKEMBIT from '../img/LogoKEMBIT.png';
 import logoRoermond from '../img/LogoRoermond.png';
 import "./HeaderPortfolio.css";
 
+
 const scrollToSection = (id) => {
   const section = document.getElementById(id);
   section?.scrollIntoView({ behavior: "smooth" });

@@ -119,26 +119,43 @@ export default function Evidence() {
           >
             <h3>UI The Kembit Times</h3>
           </a>
+        </div>
 
+        <h2>B1-K1-W5</h2>
+        <div className="evidence-grid">
+          <a
+            href="/Documents/verbetervoorstellenTheKembitTimesWIP.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h3>Verbeter voorstellen The Kembit Times</h3>
+          </a>
         </div>
 
       </section>
 
       <section id="k2" className="evidence-section">
         <h2>K2 – Werkt in een ontwikkelteam</h2>
-
+        <h2>B1-K2-W1</h2>
         <div className="evidence-grid">
+          <a
+            href="/Documents/TheKembitTimesGesprek.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h3>The Kembit Times interview vragen</h3>
+          </a>
 
-          <div className="evidence-card">
-            <h3>W1: Voert overleg</h3>
-            <p>Voeg hier beschrijvingen, foto's of documenten toe.</p>
-          </div>
-
-          <div className="evidence-card">
-            <h3>W2: Presenteert werk</h3>
-            <p>Upload bijvoorbeeld je slides of video.</p>
-          </div>
-
+          <a
+            href="/Documents/DeelopleveringTheKembitTimes.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h3>The Kembit Times interview opname</h3>
+          </a>
         </div>
 
       </section>
