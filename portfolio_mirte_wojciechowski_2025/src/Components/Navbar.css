@@ -14,10 +14,8 @@ body {
   width: 94%;
   z-index: 1000;
   border-radius: 50px;
-
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-
   transition:
     backdrop-filter 0.3s ease,
     background-color 0.3s ease;

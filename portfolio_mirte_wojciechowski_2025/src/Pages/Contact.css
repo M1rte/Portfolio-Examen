@@ -1,0 +1,224 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-bottom: 15%;
+}
+
+/* Reuse same section layout */
+.section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image styling (same as home) */
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 75%;
+  margin-left: 3rem;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling */
+.text-container {
+  flex: 1;
+}
+
+.text-container h2 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #473f34;
+}
+
+.text-container-reverse {
+  flex: 1;
+  margin-left: 3rem;
+}
+
+.text-container-reverse h2 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-container-reverse p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #473f34;
+}
+
+/* Contact form section */
+.contact-form-section {
+  background-color: #393f1a;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 3%;
+}
+
+.contact-form-section h2 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.2rem;
+  color: #f0e5cb;
+  margin-bottom: 40px;
+}
+
+/* Form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 2px solid #393f1a;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #8c9657;
+  box-shadow: 0 0 0 2px rgba(140, 150, 87, 0.2);
+}
+
+/* Match your button style */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+button.header-button-home {
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #f0e5cb;
+  border: 2px solid #393f1a;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+              background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-home::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #444b22;
+  border-radius: inherit;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.header-button-home:hover {
+  background: #8c9657;
+  transform: translate(0, 0.25em);
+}
+
+button.header-button-home:hover::before {
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.header-button-home:active {
+  transform: translate(0em, 0.75em);
+}
+
+button.header-button-home:active::before {
+  transform: translate3d(0, 0, -1em);
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+/* Inputs */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 10px;
+  border: none;
+  border-bottom: 2px solid #f0e5cb;
+  background: transparent;
+  color: #f0e5cb;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+/* Labels */
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #f0e5cb;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+  opacity: 0.7;
+}
+
+/* Floating effect */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #8c9657;
+}
+
+/* Focus underline */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom: 2px solid #8c9657;
+}
+
+/* Success message */
+.success-msg {
+  margin-top: 15px;
+  color: #f0e5cb;
+  font-family: "Lato", sans-serif;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
