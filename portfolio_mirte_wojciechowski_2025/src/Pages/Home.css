@@ -216,8 +216,8 @@ button.header-button-home:active::before {
   color: #61dafb;
 }
 
-.skill[data-skill="python"]:hover svg {
-  color: #3776ab;
+.skill[data-skill="csharp"]:hover svg {
+  color: #512bd4;
 }
 
 @keyframes fadeUp {

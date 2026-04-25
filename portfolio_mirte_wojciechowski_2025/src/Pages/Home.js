@@ -5,8 +5,8 @@ import {
   FaCss3Alt,
   FaReact,
   FaJsSquare,
-  FaPython,
 } from "react-icons/fa";
+import { SiDotnet } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import home1 from "../img/home1.jpg";
 import home2 from "../img/home2.jpg";
@@ -27,9 +27,11 @@ export default function Home() {
         <div className="text-container">
           <h2>About Me</h2>
           <p>
-            I am a passionate frontend developer with experience in React,
-            building modern and responsive websites. I enjoy turning ideas into
-            interactive digital experiences.
+            Ik ben een gepassioneerde frontend developer met ervaring in React, 
+            hierbij leg ik mijn focus vooral op het designen en realiseren van mijn ideen. 
+            En deze op een moderne en responsieve manier tot leven te wekken. 
+            Ook hou ik ervan om te leren over backend development, 
+            zodat ik steeds meer kan groeien als developer.
           </p>
           <a href="/about "><button className="header-button-home">
            Meer over mij
@@ -44,9 +46,11 @@ export default function Home() {
         <div className="text-container-reverse">
           <h2>Projects</h2>
           <p>
-            I have worked on several projects ranging from portfolio websites to
-            dynamic web applications. Each project taught me new skills and best
-            practices.
+            Ik heb tijdens deze studie aan verschillende projecten gewerkt, 
+            variërend van portfolio websites tot dynamische webapplicaties. 
+            Elk project heeft me nieuwe vaardigheden geleerd. 
+            Waardoor ik een focus leg op nette code en originele designs.
+
           </p>
           <a href="/contact "><button className="header-button-home">
             Neem contact op met mij
@@ -61,8 +65,8 @@ export default function Home() {
         <div className="text-container">
           <h2>Contact</h2>
           <p>
-            Interested in working together? Feel free to reach out via the
-            contact page. I’d love to collaborate with you!
+            Heb je nog vragen of toevoegingen? Of wil je contact met mij opnemen?
+            Stuur me gerust een berichtje, ik sta altijd open voor nieuwe connecties!
           </p>
           <a href="/projects "><button className="header-button-home">
             Naar mijn projecten
@@ -99,9 +103,9 @@ export default function Home() {
             <span>React</span>
           </div>
 
-          <div className="skill" data-skill="python">
-            <FaPython />
-            <span>Python</span>
+          <div className="skill" data-skill="csharp">
+            <SiDotnet />
+            <span>C#</span>
           </div>
         </div>
 
