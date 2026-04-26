@@ -26,15 +26,17 @@ export default function Evidence() {
       <section id="k1" className="evidence-section">
         <h2>K1 – Realiseert software</h2>
 
+        {/* W1 */}
         <h3>B1-K1-W1: Plant werkzaamheden en bewaakt de voortgang</h3>
         <div className="evidence-grid">
+
           <a
             href="/Documents/B1K1MirteWojciechowski.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Planning / voortgang The KEMBIT Times</h4>
+            <h4>Planning / voortgang document</h4>
           </a>
 
           <a
@@ -43,12 +45,23 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>RSS-feed opdracht planning + commits</h4>
+            <h4>RSS opdracht planning + ontwikkelproces</h4>
           </a>
+
         </div>
 
         <h3>B1-K1-W2: Ontwerpt software</h3>
         <div className="evidence-grid">
+
+          <a
+            href="/Documents/BehoefteanalyseKTMWebsite.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Behoefteanalyse KTM Website</h4>
+          </a>
+
           <a
             href="/Documents/FunctioneelOntwerpKTMWebsite.pdf"
             target="_blank"
@@ -68,6 +81,24 @@ export default function Evidence() {
           </a>
 
           <a
+            href="/Documents/BehoefteanalyseTheKembitTimesMirteWojciechowski.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Behoefteanalyse The Kembit Times</h4>
+          </a>
+
+          <a
+            href="/Documents/FuntioneelontwerpTheKembitTimesVersion.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Functioneel ontwerp The Kembit Times</h4>
+          </a>
+
+          <a
             href="/Documents/DatabaseDiagramTheKEMBITTimes.png"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,38 +115,28 @@ export default function Evidence() {
           >
             <h4>Activity diagram</h4>
           </a>
+
         </div>
 
         <h3>B1-K1-W3: Realiseert (onderdelen van software)</h3>
         <div className="evidence-grid">
-          <a
-            href="/Documents/ScreenshotsUITheKEMBITTimes.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="evidence-card"
-          >
-            <h4>Gebouwde UI The KEMBIT Times</h4>
-          </a>
 
-          <a
-            href="/Documents/DeelopleveringTheKembitTimes.mp4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="evidence-card"
-          >
-            <h4>Werkende deeloplevering demo</h4>
-          </a>
-        </div>
-
-        <h3>B1-K1-W4: Test software</h3>
-        <div className="evidence-grid">
           <a
             href="/Documents/RSSfeedopdracht.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Testen + problemen/oplossingen RSS-feed</h4>
+            <h4>RSS Feed gebouwd + backend</h4>
+          </a>
+
+          <a
+            href="/Documents/ScreenshotsUITheKEMBITTimes.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>UI gerealiseerd</h4>
           </a>
 
           <a
@@ -124,12 +145,37 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Werkende test/demo video</h4>
+            <h4>Werkende applicatie demo</h4>
           </a>
+
+        </div>
+
+        <h3>B1-K1-W4: Test software</h3>
+        <div className="evidence-grid">
+
+          <a
+            href="/Documents/RSSfeedopdracht.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Fouten, testen en oplossingen</h4>
+          </a>
+
+          <a
+            href="/Documents/DeelopleveringTheKembitTimes.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Werkende testresultaten / demo</h4>
+          </a>
+
         </div>
 
         <h3>B1-K1-W5: Doet verbetervoorstellen voor software</h3>
         <div className="evidence-grid">
+
           <a
             href="/Documents/verbetervoorstellenTheKembitTimesWIP.pdf"
             target="_blank"
@@ -145,37 +191,42 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Problemenanalyse + oplossingen</h4>
+            <h4>Probleemanalyse + verbeteringen</h4>
           </a>
+
         </div>
       </section>
 
       <section id="k2" className="evidence-section">
         <h2>K2 – Werkt in een ontwikkelteam</h2>
 
+        {/* W1 */}
         <h3>B1-K2-W1: Voert overleg</h3>
         <div className="evidence-grid">
+
           <a
             href="/Documents/TheKembitTimesGesprek.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Interview / overleg vragen</h4>
+            <h4>Interview / overlegdocument</h4>
           </a>
 
           <a
-            href="/Documents/DeelopleveringTheKembitTimes.mp4"
+            href="/Documents/TheKembitTimesOpname.mp4"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Overleg / presentatie opname</h4>
+            <h4>Overleg opname</h4>
           </a>
+
         </div>
 
         <h3>B1-K2-W2: Presenteert het opgeleverde werk</h3>
         <div className="evidence-grid">
+
           <a
             href="/Documents/DeelopleveringTheKembitTimes.mp4"
             target="_blank"
@@ -191,12 +242,14 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Presentatiemateriaal / UI</h4>
+            <h4>Presentatie visuals / UI</h4>
           </a>
+
         </div>
 
         <h3>B1-K2-W3: Reflecteert op het werk</h3>
         <div className="evidence-grid">
+
           <a
             href="/Documents/verbetervoorstellenTheKembitTimesWIP.pdf"
             target="_blank"
@@ -212,8 +265,9 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Projectevaluatie / voortgang</h4>
+            <h4>Voortgang + evaluatie</h4>
           </a>
+
         </div>
       </section>
 
