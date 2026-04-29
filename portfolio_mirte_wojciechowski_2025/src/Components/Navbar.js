@@ -31,7 +31,6 @@ const Navbar = () => {
       <div className="nav-right">
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li><a href="/">Home</a></li>
-          <li><a href="/about">Over mij</a></li>
           <li><a href="/projects">Projecten</a></li>
           <li><a href="/evidence">Bewijsmaterialen</a></li>
           <li><a href="/contact">Contacten</a></li>

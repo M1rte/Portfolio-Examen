@@ -8,7 +8,6 @@ const Footer = () => {
       <div className="footer-left">
         <ul className="footer-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">Over mij</a></li>
           <li><a href="/projects">Projecten</a></li>
           <li><a href="/Evidence">Bewijsmaterialen</a></li>
           <li><a href="/contact">Contacten</a></li>
