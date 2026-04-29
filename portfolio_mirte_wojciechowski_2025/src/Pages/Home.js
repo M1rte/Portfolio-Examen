@@ -33,43 +33,8 @@ export default function Home() {
             Ook hou ik ervan om te leren over backend development, 
             zodat ik steeds meer kan groeien als developer.
           </p>
-          <a href="/about "><button className="header-button-home">
-           Meer over mij
-          </button></a>
-        </div>
-      </section>
-
-      <section className="section reverse">
-        <div className="image-container">
-          <img src={home2} alt="Projects" />
-        </div>
-        <div className="text-container-reverse">
-          <h2>Projects</h2>
-          <p>
-            Ik heb tijdens deze studie aan verschillende projecten gewerkt, 
-            variërend van portfolio websites tot dynamische webapplicaties. 
-            Elk project heeft me nieuwe vaardigheden geleerd. 
-            Waardoor ik een focus leg op nette code en originele designs.
-
-          </p>
-          <a href="/contact "><button className="header-button-home">
-            Neem contact op met mij
-          </button></a>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="image-container">
-          <img src={home4} alt="Contact" />
-        </div>
-        <div className="text-container">
-          <h2>Contact</h2>
-          <p>
-            Heb je nog vragen of toevoegingen? Of wil je contact met mij opnemen?
-            Stuur me gerust een berichtje, ik sta altijd open voor nieuwe connecties!
-          </p>
           <a href="/projects "><button className="header-button-home">
-            Naar mijn projecten
+           Mijn projecten
           </button></a>
         </div>
       </section>
@@ -112,6 +77,40 @@ export default function Home() {
           <a href="/projects "><button className="header-button-home">
             Naar mijn projecten
           </button></a>
+      </section>
+
+      <section className="section reverse">
+        <div className="image-container">
+          <img src={home2} alt="Projects" />
+        </div>
+        <div className="text-container-reverse">
+          <h2>Projects</h2>
+          <p>
+            Ik heb tijdens deze studie aan verschillende projecten gewerkt, 
+            variërend van portfolio websites tot dynamische webapplicaties. 
+            Elk project heeft me nieuwe vaardigheden geleerd. 
+            Waardoor ik een focus leg op nette code en originele designs.
+          </p>
+          <a href="/evidence "><button className="header-button-home">
+            Naar mijn bewijsmateriaal
+          </button></a>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="image-container">
+          <img src={home4} alt="Contact" />
+        </div>
+        <div className="text-container">
+          <h2>Contact</h2>
+          <p>
+            Heb je nog vragen of toevoegingen? Of wil je contact met mij opnemen?
+            Stuur me gerust een berichtje, ik sta altijd open voor nieuwe connecties!
+          </p>
+            <a href="/contact "><button className="header-button-home">
+            Neem contact op met mij
+            </button></a>
+        </div>
       </section>
     </div>
   );

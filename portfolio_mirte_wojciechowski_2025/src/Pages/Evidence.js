@@ -26,7 +26,6 @@ export default function Evidence() {
       <section id="k1" className="evidence-section">
         <h2>K1 – Realiseert software</h2>
 
-        {/* W1 */}
         <h3>B1-K1-W1: Plant werkzaamheden en bewaakt de voortgang</h3>
         <div className="evidence-grid">
 
@@ -36,7 +35,16 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Planning / voortgang document</h4>
+            <h4>Voortgangsdocument</h4>
+          </a>
+
+          <a
+            href="/Documents/GithubSamenwerking.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Github +samenwerking</h4>
           </a>
 
           <a
@@ -45,7 +53,7 @@ export default function Evidence() {
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>RSS opdracht planning + ontwikkelproces</h4>
+            <h4>RSS opdracht planning</h4>
           </a>
 
         </div>
@@ -115,6 +123,14 @@ export default function Evidence() {
           >
             <h4>Activity diagram</h4>
           </a>
+          <a
+            href="/Documents/ScreenshotsUITheKEMBITTimes.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>UI gerealiseerd</h4>
+          </a>
 
         </div>
 
@@ -131,16 +147,16 @@ export default function Evidence() {
           </a>
 
           <a
-            href="/Documents/ScreenshotsUITheKEMBITTimes.pdf"
+            href="/Documents/CodeBewijsMirteWojciechowski.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>UI gerealiseerd</h4>
+            <h4>Code bewijs The KEMBIT Times</h4>
           </a>
 
           <a
-            href="/Documents/DeelopleveringTheKembitTimes.mp4"
+            href="/Documents/Bewijs_TheKembitTimesDemo.mp4"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
@@ -163,12 +179,12 @@ export default function Evidence() {
           </a>
 
           <a
-            href="/Documents/DeelopleveringTheKembitTimes.mp4"
+            href="/Documents/MirteWojciechowskiTestPlanTheKembitTimes.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Werkende testresultaten / demo</h4>
+            <h4>Testplan The KEMBIT Times</h4>
           </a>
 
         </div>
@@ -200,7 +216,6 @@ export default function Evidence() {
       <section id="k2" className="evidence-section">
         <h2>K2 – Werkt in een ontwikkelteam</h2>
 
-        {/* W1 */}
         <h3>B1-K2-W1: Voert overleg</h3>
         <div className="evidence-grid">
 
@@ -211,6 +226,15 @@ export default function Evidence() {
             className="evidence-card"
           >
             <h4>Interview / overlegdocument</h4>
+          </a>
+          
+          <a
+            href="/Documents/GithubSamenwerking.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="evidence-card"
+          >
+            <h4>Github +samenwerking</h4>
           </a>
 
           <a
@@ -251,12 +275,12 @@ export default function Evidence() {
         <div className="evidence-grid">
 
           <a
-            href="/Documents/verbetervoorstellenTheKembitTimesWIP.pdf"
+            href="/Documents/ReflectieverslagMirteWojciechowski.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Reflectie + verbeterpunten</h4>
+            <h4>Reflectie The KEMBIT Times</h4>
           </a>
 
           <a

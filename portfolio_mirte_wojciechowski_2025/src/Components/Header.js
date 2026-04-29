@@ -4,9 +4,6 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-left">
-        <div className="profile-pic"></div>
-      </div>
       <div className="header-right">
         <h1 className="hello-text">Hello There!!</h1>
         <p>

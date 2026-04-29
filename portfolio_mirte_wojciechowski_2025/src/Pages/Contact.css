@@ -17,11 +17,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../img/contact1.jpg");
+  background-image: linear-gradient(rgba(34, 30, 24, 0.6), rgba(34, 30, 24, 0.6)), url("../img/contact1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
-  opacity: 0.5;
   z-index: 1;
 }
 
