@@ -16,8 +16,8 @@
   inset: 0;
   background-image: url("../../src/img/projects2.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0% 0%;
+  background-size: cover;
+  background-position: center;
   opacity: 0.5;
   z-index: 1;
 }

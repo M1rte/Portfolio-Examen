@@ -193,21 +193,21 @@ export default function Evidence() {
         <div className="evidence-grid">
 
           <a
-            href="/Documents/verbetervoorstellenTheKembitTimesWIP.pdf"
+            href="/Documents/VerbetervoorstellenTheKEMBITTimes.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Verbeter voorstellen</h4>
+            <h4>Verbeter voorstellen The KEMBIT Times</h4>
           </a>
 
           <a
-            href="/Documents/RSSfeedopdracht.pdf"
+            href="/Documents/VerbetervoorstellenPortfolioexamen.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="evidence-card"
           >
-            <h4>Probleemanalyse + verbeteringen</h4>
+            <h4>Verbeter voorstellen PortfolioExamen</h4>
           </a>
 
         </div>

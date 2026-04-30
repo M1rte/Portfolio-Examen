@@ -36,7 +36,7 @@ const Navbar = () => {
           <li><a href="/contact">Contacten</a></li>
         </ul>
 
-        <div className="hamburger" onClick={toggleMenu}>
+        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
